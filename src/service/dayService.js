@@ -2,7 +2,14 @@ const { AccessDeniedError } = require('sequelize')
 const { Day } = require('../db.js')
 // const { getContinents } = require('../clients/countryClient')
 
+const sevenDays = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado",]
+const allDays = ["Sabado"]
+const febrero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+const abJunSepNov = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+const enMaMayJulAgOcDic = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
 class CountryService{
+
+
     async createDay(){
         try {
             // console.log(diasNames.length)
@@ -269,6 +276,20 @@ class CountryService{
         }
      
     }
+
+    async getAllDays(){
+
+        try {
+            const allDays = await Day.findAll({
+                attributes:["name","numberOfMonth", "month", "numberOfYear"]
+            })
+            return allDays
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+
 
 
 }
