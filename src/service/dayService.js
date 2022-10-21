@@ -281,7 +281,7 @@ class CountryService{
 
         try {
             const allDays = await Day.findAll({
-                attributes:["name","numberOfMonth", "month", "numberOfYear"]
+                attributes:["name","numberOfMonth", "month", "numberOfYear", 'id']
             })
             return allDays
         } catch (error) {
