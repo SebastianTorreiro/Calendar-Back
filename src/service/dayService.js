@@ -289,6 +289,18 @@ class CountryService{
         }
     }
 
+    async getDayById(id){
+        try {
+            const dayById = await Day.findOne({
+                where:{id}
+            })
+            console.log(dayById)
+            return dayById
+        }catch (error){
+            console.log(error)
+            return error
+        }
+    }
 
 
 
