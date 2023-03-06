@@ -29,12 +29,6 @@ const diasNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1
 // Sincronizando 
 conn.sync({ force: true }).then( async () => {
 
-  // let countries = await getAllCountries();
-  // countries = countries.splice(1, 50)
-  // countries = countries.filter(c => typeof c === 'object')
-  // console.log(countries)
-  // Country.bulkCreate(countries)
-
   server.listen(3001, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
     console.log(diasNames.length)

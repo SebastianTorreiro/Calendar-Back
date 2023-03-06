@@ -9,10 +9,11 @@ const service = new dayService();
 router.get("/", async (req, res)=>{
     try{
         const allDays = await service.getAllDays();
+        console.log(allDays)
         res.status(201).json(allDays)
     }catch(error){
-        // res.status(404).json(error)
-        console.log(error)
+        res.status(404).json(error)
+        // console.log(error)
     }
 })
 
