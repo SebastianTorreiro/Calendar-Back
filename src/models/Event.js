@@ -3,20 +3,20 @@ const { DataTypes } = require('sequelize');
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
   // defino el modelo
-  sequelize.define('objectives', {
+  sequelize.define('event', {
     name:{
         type: DataTypes.STRING,
         allowNull: false,
         // unique: true
       },
-    timeForWeek:{
-        type: DataTypes.STRING,
+    time:{
+        type: DataTypes.NUMBER,
         allowNull: false
     },
-    completed:{
-      type: DataTypes.BOOLEAN,
+    note:{
+        type: DataTypes.NUMBER,
+        allowNull: false
     },
-    
       
 },
 {timestamps: false}

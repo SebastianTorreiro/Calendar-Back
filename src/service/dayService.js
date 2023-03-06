@@ -1,6 +1,4 @@
-const { AccessDeniedError } = require('sequelize')
-const { Day } = require('../db.js')
-// const { getContinents } = require('../clients/countryClient')
+import { Day } from '../db.js'
 
 const sevenDays = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado",]
 const allDays = ["Sabado"]
@@ -12,11 +10,8 @@ class CountryService{
 
     async createDay(){
         try {
-            // console.log(diasNames.length)
             let daysPa = allDays;
-            // for (let j = 0; j < 52; j++) {
-            //     daysPa.concat(sevenDays)
-            // }
+          
             let j = 0
             while (j < 52) {
                 daysPa = daysPa.concat(sevenDays)
@@ -306,4 +301,4 @@ class CountryService{
 
 }
 
-module.exports = CountryService;
+export default CountryService;
