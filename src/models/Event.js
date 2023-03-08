@@ -10,11 +10,11 @@ module.exports = (sequelize) => {
         // unique: true
       },
     time:{
-        type: DataTypes.NUMBER,
+        type: DataTypes.INTEGER,
         allowNull: false
     },
     note:{
-        type: DataTypes.NUMBER,
+        type: DataTypes.STRING,
         allowNull: false
     },
       

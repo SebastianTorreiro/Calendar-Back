@@ -2,14 +2,13 @@ const {Router} = require('express');
 const router = Router();
 const { Day } = require('../db.js')
 
-const dayService = require('../service/dayService.js')
-const service = new dayService();
+const DayService = require('../service/dayService.js');
+const service = new DayService();
 
 
 router.get("/", async (req, res)=>{
     try{
         const allDays = await service.getAllDays();
-        console.log(allDays)
         res.status(201).json(allDays)
     }catch(error){
         res.status(404).json(error)

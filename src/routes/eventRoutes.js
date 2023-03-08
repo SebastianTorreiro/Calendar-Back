@@ -6,11 +6,19 @@ const eventService = require('../service/eventService.js')
 const service = new eventService();
 
 
-router.get("/", async (req, res)=>{
+router.post("/create", async (req, res)=>{
+    try {
+        let {name, time, note, dayId} = req.body;
+        time = parseInt(time)
+        console.log(dayId)
+        const newEvent =  await service.createEvent(name, time, note, dayId)
+        res.send(newEvent) 
+
+    } catch (error) {
+        res.status(404).send(error) 
+    }
     
-
 })
-
 
 
 
