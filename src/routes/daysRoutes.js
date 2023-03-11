@@ -16,6 +16,16 @@ router.get("/", async (req, res)=>{
     }
 })
 
+// router.get("/", async (req, res)=>{
+//     try{
+//         const allDays = await service.getAllDays();
+//         res.status(201).json(allDays)
+//     }catch(error){
+//         res.status(404).json(error)
+//         // console.log(error)
+//     }
+// })
+
 router.get('/:id', async (req,res)=>{
     const { id } = req.params
     console.log(id)
