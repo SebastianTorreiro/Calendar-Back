@@ -103,6 +103,9 @@ module.exports = (sequelize) => {
     23:{
       type: DataTypes.STRING,
     },
+    resume:{
+      type: DataTypes.STRING,
+    },
   },
   {timestamps: false}
   );

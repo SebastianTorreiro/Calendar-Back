@@ -58,213 +58,6 @@ class DayService{
            }
 
 
-            // const daysWithNumberOfYear = daysPa.map((d,i) =>{
-            // if(0 < i && i < 32){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Enero' 
-            //     }
-            // }
-            // if( 32 <= i && i < 60){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Febrero' 
-            //     }
-            // }
-            // if( 60 <= i && i < 91){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Marzo' 
-            //     }
-            // }
-            // if( 91 <= i && i < 121){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Abril' 
-            //     }
-            // }
-            // if( 121 <= i && i < 152){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Mayo' 
-            //     }
-            // }
-            // if( 152 <= i && i < 182){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Junio' 
-            //     }
-            // }
-            // if( 182 <= i && i < 213){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Julio' 
-            //     }
-            // }
-            // if( 213 <= i && i < 244){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Agosto' 
-            //     }
-            // }
-            // if( 244 <= i && i < 274){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Septiembre' 
-            //     }
-            // }
-            // if( 274 <= i && i < 305){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Octubre' 
-            //     }
-            // }
-            // if( 305 <= i && i < 335){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Noviembre' 
-            //     }
-            // }
-            // if( 335 <= i && i < 366){
-            //     return {
-            //         name: d,
-            //         numberOfYear: i + 1,
-            //         numberOfMonth: i + 1,
-            //         month: 'Diciembre' 
-            //     }
-            // }
-            // })
-
-            // for (let i = 0; i < daysPa.length; i++) {
-            //     const element = daysPam[i];
-                
-            // }
-
-
-            // for (let i = 1; i < daysWithNumberOfYear.length; i++) {
-            //     const element = array[i];
-            //     if(i < 32){
-
-            //     let weeke = week[i]
-
-            //     let pusheable = { 
-            //     week: weeke,
-            //     month: 'Enero',
-            //     }
-            //     daysPa.push(pusheable)
-
-            // // }
-            //     }                
-
-
-
-
-            // }
-            
-
-
-
-
-            // for (let j = 0; j < months.length; j++) {
-            //     const month = months[j];
-
-            // if(month === "Febrero"){
-                 
-            //     for (let i = 0; i < febrero.length; i++) {
-
-            //         let name = diasNames[i];
-            //         let number = febrero[i]
-            //         let weeke = week[i]
-    
-            //         let pusheable = { name: name,
-            //         number: number,
-            //         week: weeke,
-            //         month: month,
-            //         }
-            //         daysPa.push(pusheable)
-            //     }
-            // }   
-
-            // if(month === "Enero" || "Marzo" ||  "Mayo" || "Julio" || "Agosto" || "Octubre" || "Diciembre" ){
-
-            // enMaMayJulAgOcDic
-
-            //     let name = diasNames[i];
-            //     let number = diasNumber31[i]
-            //     let weeke = week[i]
-
-            //     let pusheable = { 
-            //     name: name,
-            //     number: number,
-            //     week: weeke,
-            //     month: month,
-            //     }
-            //     daysPa.push(pusheable)
-
-            // }
-
-            
-
-
-
-            //     for (let i = 0; i < diasNames.length; i++) {
-
-                 
-            //         }
-            //         if(month === "Enero" || "Marzo" ||  "Mayo" || "Julio" || "Agosto" || "Octubre" || "Diciembre" ){
-            //             let name = diasNames[i];
-            //             let number = diasNumber31[i]
-            //             let weeke = week[i]
-        
-            //             let pusheable = { 
-            //             name: name,
-            //             number: number,
-            //             week: weeke,
-            //             month: month,
-            //             }
-            //             daysPa.push(pusheable)
-
-            //         }
-            //         if(month === "Abril" || "Junio" || "Septiembre" || "Noviembre"){
-            //             let name = diasNames[i];
-            //             let number = diasNumber30[i]
-            //             let weeke = week[i]
-        
-            //             let pusheable = { 
-            //             name: name,
-            //             number: number,
-            //             week: weeke,
-            //             month: month,
-            //             }
-            //             daysPa.push(pusheable)
-
-            //         }
-            // }
-
-
-            // console.log(daysPa)
             return dale
         } catch (error) {
             console.log(error);
@@ -295,6 +88,24 @@ class DayService{
             console.log(error)
             return error
         }
+    }
+
+
+    async editResume(resume, idDay){
+        try {
+            const resumeUpdated = Day.update({
+                resume: resume
+            },{
+                where: {
+                    id: idDay
+                }
+            })
+            return resumeUpdated
+            
+        } catch (error) {
+            return error
+        }
+
     }
 
 

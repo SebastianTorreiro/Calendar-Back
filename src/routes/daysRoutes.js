@@ -48,5 +48,16 @@ router.post('/create', async (req, res) => {
 
 })
 
+router.put('/resume', async (req, res)=>{
+try {
+    const  { resume, idDay }  = req.body;
+    const resumeEdit = await service.editResume(resume, idDay);
+    res.json(resumeEdit)
+} catch (error) {
+    console.log(error)
+}
+
+})
+
 
 module.exports = router
