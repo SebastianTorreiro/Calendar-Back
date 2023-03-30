@@ -9,6 +9,7 @@ const service = new eventService();
 router.post("/create", async (req, res)=>{
     try {
         let {name, time, note, dayId} = req.body;
+        if(!name || !time || !note || !dayId) res.json({message:"Error, missing data"})
         time = parseInt(time)
         console.log(dayId)
         const newEvent =  await service.createEvent(name, time, note, dayId)

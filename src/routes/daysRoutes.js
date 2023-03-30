@@ -28,7 +28,6 @@ router.get("/", async (req, res)=>{
 
 router.get('/:id', async (req,res)=>{
     const { id } = req.params
-    console.log(id)
     try {
         const dayById = await service.getDayById(id);
         res.status(201).json(dayById)
@@ -51,6 +50,7 @@ router.post('/create', async (req, res) => {
 router.put('/resume', async (req, res)=>{
 try {
     const  { resume, idDay }  = req.body;
+    if(!resume || !idDay) res.json({message:"Error, missing data"})
     const resumeEdit = await service.editResume(resume, idDay);
     res.json(resumeEdit)
 } catch (error) {
